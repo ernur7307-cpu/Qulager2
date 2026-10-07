@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qulager - Ет және сүт өнімдері</title>
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Qulager — Түркістандағы таза ет және сүт өнімдері дүкені">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="preloader"><div class="loader-logo">Qulager</div></div>
+  <script>
+    /* «Qulager» жүктеу экраны тек сайтқа алғаш кіргенде шығады */
+    try { if (sessionStorage.getItem('ql_seen')) { document.getElementById('preloader').remove(); } else { sessionStorage.setItem('ql_seen', '1'); } } catch (e) {}
+  </script>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="logo-wrapper">
+        <img src="images/logo.svg" alt="Qulager Logo" class="round-logo">
+        <span class="logo">Qulager<span>Дүкені</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Мәзір">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="#home">Басты бет</a>
+        <a href="#about">Біз туралы</a>
+        <a href="#products">Прайс-парақ</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#faq">FAQ</a>
+        <a href="#reviews">Пікірлер</a>
+        <a href="#contact">Байланыс</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="container hero-content fade-in">
+      <p class="subtitle">Экологиялық таза өнімдер</p>
+      <h1>Таза ет және сүт өнімдері</h1>
+      <p>Qulager — Түркістан қаласындағы жоғары сапалы, халал әрі табиғи ауыл шаруашылығы өнімдерін ұсынатын премиум дүкен.</p>
+      <a href="#products" class="btn">Прайс-парақты көру</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-text fade-in">
+          <p class="section-tag">Біз туралы</p>
+          <h2>Дәстүр мен сапаны біріктірген дүкен</h2>
+          <p>"Құлагер" дүкені тұтынушыларына күнделікті балғын ет және сүт өнімдерін ұсынады. Біздің басты мақсатымыз — дастарханыңызға тек таза, табиғи және сапалы өнімдерді жеткізу.</p>
+          <div class="trust-badges">
+            <div class="badge-card"><h3>🌿 100% Табиғи</h3><p>Қоспасыз өнімдер</p></div>
+            <div class="badge-card"><h3>🌙 Халал</h3><p>Таза сойыс</p></div>
+            <div class="badge-card"><h3>🔪 Күнделікті</h3><p>Балғын ет</p></div>
+          </div>
+        </div>
+        <div class="about-image fade-in"><img src="images/about.svg" alt="Дүкен витринасы"></div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="products">
+      <div class="container fade-in">
+        <p class="section-tag center">Каталог</p>
+        <h2 class="section-title center">Прайс-парақ</h2>
+        <div class="main-category-grid">
+          <a href="meat.html" class="main-cat-card">
+            <img src="images/categories/meat.svg" alt="Ет өнімдері" loading="lazy">
+            <div class="cat-card-overlay"><h3>Ет өнімдері ➔</h3></div>
+          </a>
+          <a href="dairy.html" class="main-cat-card">
+            <img src="images/categories/dairy.svg" alt="Сүт өнімдері" loading="lazy">
+            <div class="cat-card-overlay"><h3>Сүт өнімдері ➔</h3></div>
+          </a>
+          <a href="poultry.html" class="main-cat-card">
+            <img src="images/categories/poultry.svg" alt="Аң-құс" loading="lazy">
+            <div class="cat-card-overlay"><h3>Аң-құс ➔</h3></div>
+          </a>
+          <a href="sub.html" class="main-cat-card">
+            <img src="images/categories/sub.svg" alt="Суб набор" loading="lazy">
+            <div class="cat-card-overlay"><h3>Суб набор ➔</h3></div>
+          </a>
+          <a href="spices.html" class="main-cat-card">
+            <img src="images/categories/spices.svg" alt="Дәмдеуіштер" loading="lazy">
+            <div class="cat-card-overlay"><h3>Дәмдеуіштер ➔</h3></div>
+          </a>
+          <a href="own.html" class="main-cat-card">
+            <img src="images/categories/own.svg" alt="Біздің өнімдер" loading="lazy">
+            <div class="cat-card-overlay"><h3>Біздің өнімдер ➔</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container fade-in">
+        <p class="section-tag center">Галерея</p>
+        <h2 class="section-title center">Дүкен сөрелері</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/gallery1.svg" alt="Витрина" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/gallery2.svg" alt="Ет бөлімі" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/gallery3.svg" alt="Сүт бөлімі" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="faq">
+      <div class="container fade-in">
+        <div class="faq-box">
+          <p class="section-tag center">FAQ</p>
+          <h2 class="section-title center">Жиі қойылатын сұрақтар</h2>
+          <div class="faq-container">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">Ет өнімдері күнделікті сойыла ма?<span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Иә, біздің дүкенге ет күн сайын жаңадан, арнайы халал қасапханалардан жеткізіледі. Тазалық пен балғындық — біздің басты қағидамыз.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">Түркістан ішінде жеткізу қызметі бар ма?<span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Иә, Түркістан қаласы бойынша жеткізу қызметі қарастырылған. Тапсырысты WhatsApp арқылы берсеңіз, есігіңізге дейін жылдам жеткізіп береміз.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">Өнімдердің экологиялық тазалығына кепілдік бар ма?<span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Әрине. Біз тек сенімді, тексерілген жергілікті шаруа қожалықтарымен жұмыс істейміз. Барлық өнімдер ветеринарлық бақылаудан өткен.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">Мейрамханалар үшін көтерме (оптом) баға бар ма?<span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Иә, дәмханалар мен мейрамханалар үшін арнайы көтерме бағалар мен тұрақты жеткізу шарттары бар. Толық прайс-парақты байланыс нөмірлері арқылы сұрасаңыз болады.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container fade-in">
+        <p class="section-tag center">Пікірлер</p>
+        <h2 class="section-title center">Клиенттеріміз не дейді?</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Ет өнімдері өте балғын. Түркістандағы ең үздік дүкендердің бірі. Жеткізу қызметі де жылдам жұмыс істейді!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">А</div>
+              <div><h4 class="reviewer-name">Асхат</h4><p class="reviewer-status">Тұрақты сатып алушы</p></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Сүт өнімдері нағыз ауылдың дәмін еске түсіреді. Қаймағы мен құрты өте дәмді екен, рахмет!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">Г</div>
+              <div><h4 class="reviewer-name">Гүлнар</h4><p class="reviewer-status">Түркістан қ. тұрғыны</p></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Тапсырыс беру өте ыңғайлы. WhatsApp арқылы бәрін тез түсіндіріп берді. Сапасы жоғары!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">Б</div>
+              <div><h4 class="reviewer-name">Бауыржан</h4><p class="reviewer-status">Клиент</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-live">
+          <h3 class="review-live-title">Пікір қалдыру</h3>
+          <form id="reviewForm" class="review-form" novalidate>
+            <label class="rf-label" for="rvName">Атыңыз</label>
+            <input id="rvName" class="rf-input" type="text" maxlength="40" autocomplete="given-name" placeholder="Мысалы: Айжан" required>
+
+            <span class="rf-label" id="rvStarsLabel">Бағаңыз</span>
+            <div class="star-input" role="radiogroup" aria-labelledby="rvStarsLabel">
+              <input type="radio" name="rvRating" id="st5" value="5"><label for="st5" title="5 жұлдыз">★</label>
+              <input type="radio" name="rvRating" id="st4" value="4"><label for="st4" title="4 жұлдыз">★</label>
+              <input type="radio" name="rvRating" id="st3" value="3"><label for="st3" title="3 жұлдыз">★</label>
+              <input type="radio" name="rvRating" id="st2" value="2"><label for="st2" title="2 жұлдыз">★</label>
+              <input type="radio" name="rvRating" id="st1" value="1"><label for="st1" title="1 жұлдыз">★</label>
+            </div>
+
+            <label class="rf-label" for="rvText">Пікіріңіз</label>
+            <textarea id="rvText" class="rf-input" rows="4" maxlength="500" placeholder="Пікіріңізді осында жазыңыз..." required></textarea>
+            <div class="rf-count" id="rvCount">0 / 500</div>
+
+            <p class="rf-msg" id="rvMsg" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-block" id="rvSubmit">Пікірді жіберу</button>
+          </form>
+          <p class="review-note" id="rvNote"></p>
+
+          <h3 class="review-live-title">Барлық пікірлер <span id="rvTotal"></span></h3>
+          <div id="reviewList" class="review-list" aria-live="polite"><p class="rv-empty">Жүктелуде...</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="contact">
+      <div class="container contact-grid fade-in">
+        <div class="contact-info">
+          <p class="section-tag">Байланыс</p>
+          <h2>Бізге келіңіз</h2>
+          <p><strong>Мекенжай:</strong> Түркістан қ., 4-й Төлегенова, 2а</p>
+          <p><strong>Телефондар:</strong></p>
+          <div class="phone-list">
+            <div class="phone-row">
+              <a class="phone-num" href="tel:+77477278100">📞 8 747 727 8100</a>
+              <a class="phone-wa" href="https://wa.me/77477278100" target="_blank" rel="noopener" aria-label="WhatsApp 8 747 727 8100">💬 WhatsApp</a>
+            </div>
+            <div class="phone-row">
+              <a class="phone-num" href="tel:+77767278100">📞 8 776 727 8100</a>
+              <a class="phone-wa" href="https://wa.me/77767278100" target="_blank" rel="noopener" aria-label="WhatsApp 8 776 727 8100">💬 WhatsApp</a>
+            </div>
+          </div>
+          <p><strong>Email:</strong> info@qulager.kz</p>
+          <p><strong>Жұмыс уақыты:</strong> 08:00 – 21:00 (демалыссыз)</p>
+          <div class="direct-contact">
+            <p class="contact-subtext">Бізбен бірден байланысыңыз:</p>
+            <div class="contact-buttons">
+              <a href="https://instagram.com/qulager_turkestan" class="contact-btn" target="_blank" rel="noopener"><span class="icon">📸</span> Instagram парақшамыз</a>
+                          </div>
+          </div>
+        </div>
+        <div class="map-box">
+          <iframe src="https://maps.google.com/maps?q=%D0%A2%D2%AF%D1%80%D0%BA%D1%96%D1%81%D1%82%D0%B0%D0%BD%2C%204-%D0%B9%20%D0%A2%D3%A9%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%2C%202%D0%B0&amp;z=16&amp;output=embed" title="Qulager картада" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>Qulager Дүкені</h3><p>Сапа мен дәмнің кепілі. Үстеліңізге тек ең жақсысын ұсынамыз.</p></div>
+      <div><h4>Әлеуметтік желілер</h4>
+        <ul>
+          <li><a href="https://instagram.com/qulager_turkestan" target="_blank" rel="noopener">Instagram (@qulager_turkestan)</a></li>
+          <li><a href="https://wa.me/77767278100" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+77477278100">8 747 727 8100</a></li>
+          <li><a href="tel:+77767278100">8 776 727 8100</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Qulager Ет және сүт өнімдері. Барлық құқық қорғалған.</p></div>
+  </footer>
+
+  <a href="#home" class="scroll-top" id="scrollTopBtn" aria-label="Жоғары">↑</a>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
